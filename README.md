@@ -2,7 +2,9 @@
 
 A full-stack CRUD system using **one shared backend** (Flask + MySQL) with:
 
-- 📱 A **Mobile App** (React Native + Expo)
+## 📱 Mobile App (React Native + Expo)
+
+### 📂 Location: `/mobile/`
 
 ---
   
