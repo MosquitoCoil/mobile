@@ -17,8 +17,6 @@ project-root/
 
 ```
 ---
-## 🌐 Web App (Flask + Jinja)
-
 ### Features:
 
 - Register/Login via mobile UI
