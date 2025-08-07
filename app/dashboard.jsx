@@ -32,7 +32,7 @@ const Dashboard = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>List of Registered Users</Text>
+        <Text style={styles.title}>Welcome User</Text>
         <TouchableOpacity onPress={handleLogout} style={styles.logoutButton}>
           <Text style={styles.logoutText}>Logout</Text>
         </TouchableOpacity>

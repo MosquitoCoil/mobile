@@ -235,9 +235,6 @@ export default function UserList() {
             <Text style={{ marginTop: 10, fontWeight: "bold" }}>
               Change user to:
             </Text>
-            <Text style={{ marginTop: 10, fontWeight: "bold" }}>
-              Change user to:
-            </Text>
             <View style={styles.pickerContainer}>
               <Picker
                 selectedValue={selectedUser?.is_admin}

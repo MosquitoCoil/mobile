@@ -4,7 +4,6 @@ import {
   View,
   Image,
   TextInput,
-  useColorScheme,
   TouchableOpacity,
   Alert,
 } from "react-native";
@@ -74,6 +73,18 @@ const Register = () => {
         secureTextEntry={true}
         onChangeText={setPassword}
       />
+      <Text style={{ marginTop: 10, fontWeight: "bold" }}>Type of user</Text>
+      <View style={styles.pickerContainer}>
+        <Picker
+          selectedValue={isAdmin}
+          onValueChange={(value) => setIsAdmin(value)}
+          mode="dropdown"
+          style={styles.picker}
+        >
+          <Picker.Item label="admin" value="admin" />
+          <Picker.Item label="user" value="user" />
+        </Picker>
+      </View>
       <TouchableOpacity style={styles.button} onPress={handleRegister}>
         <Text style={styles.buttonText}>Register</Text>
       </TouchableOpacity>
@@ -114,5 +125,19 @@ const styles = StyleSheet.create({
   buttonText: {
     color: "#fff",
     fontWeight: "bold",
+  },
+  pickerContainer: {
+    width: "50%",
+    borderWidth: 1,
+    borderColor: "#ccc",
+    borderRadius: 5,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingHorizontal: 5,
+    backgroundColor: "#fff", // Optional: helps on Android
+  },
+  picker: {
+    height: 50,
+    width: "100%",
   },
 });
